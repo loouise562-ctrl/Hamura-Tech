@@ -1,0 +1,151 @@
+<!doctype html>
+
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hamura Tech — CNC Milling, CNC Lathe, Fabrikasi & 3D Printing</title>
+  <meta name="description" content="Hamura Tech melayani jasa CNC Milling, CNC Lathe, Fabrikasi, dan 3D Printing dengan presisi tinggi untuk kebutuhan industri, otomotif, dan custom engineering." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --azure: #007FFF;
+      --azure-2: #38A3FF;
+      --bg: #ffffff;
+      --muted:#6b7280;
+      --card-shadow: 0 8px 24px rgba(3,7,18,0.06);
+    }
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+      background-color:var(--bg);
+      color:#061029;
+      line-height:1.45;
+      overflow-x:hidden;
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><line x1="0" y1="100" x2="100" y2="0" stroke="%23007FFF" stroke-width="0.5" stroke-opacity="0.2"/><line x1="-50" y1="100" x2="50" y2="0" stroke="%23007FFF" stroke-width="0.5" stroke-opacity="0.2"/><line x1="50" y1="100" x2="150" y2="0" stroke="%23007FFF" stroke-width="0.5" stroke-opacity="0.2"/></svg>');
+      background-repeat: repeat;
+      background-size: 200px 200px;
+    }.container{max-width:1120px;margin:0 auto;padding:24px}
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:52px;height:52px;border-radius:10px;background:linear-gradient(135deg,var(--azure),var(--azure-2));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;box-shadow:var(--card-shadow)}
+.brand h1{font-size:18px;margin:0}
+nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+nav a{text-decoration:none;color:#061029;font-weight:600;}
+
+.hero{display:grid;grid-template-columns:1fr 420px;gap:36px;align-items:center;padding:48px 0}
+.hero-left h2{font-size:28px;margin:0 0 12px}
+.hero-left p{margin:0 0 18px;color:var(--muted)}
+.btn-primary{background:linear-gradient(90deg,var(--azure),var(--azure-2));color:white;padding:12px 20px;border-radius:10px;border:0;font-weight:700;display:inline-flex;gap:10px;align-items:center;cursor:pointer;text-decoration:none}
+
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin:40px 0}
+.service{background:#fbfdff;border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(4,10,25,0.04);display:flex;flex-direction:column;gap:12px;align-items:flex-start;opacity:0;transform:translateY(30px);transition:all 0.8s ease;cursor:pointer;}
+.service.visible{opacity:1;transform:translateY(0);}
+.service .icon{width:56px;height:56px;border-radius:10px;background:linear-gradient(180deg,var(--azure-2),var(--azure));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px;}
+.service h3{margin:0 0 6px}
+.service p{margin:0;color:var(--muted);font-size:14px}
+.service-details{display:none;margin-top:8px;font-size:14px;color:#374151;}
+.service img{width:100%;border-radius:10px;margin-top:8px;}
+
+footer{border-top:1px solid rgba(6,16,40,0.06);padding:20px 0;margin-top:36px;display:flex;justify-content:space-between;align-items:center}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">HT</div>
+        <div>
+          <h1>Hamura Tech</h1>
+          <div style="font-size:12px;color:#6b7280">CNC Milling • CNC Lathe • Fabrikasi • 3D Printing</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#services">Layanan</a></li>
+          <li><a href="#gallery">Galeri</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </nav>
+    </header><main>
+  <section class="hero">
+    <div class="hero-left">
+      <h2>Hamura Tech melayani jasa CNC Milling, CNC Lathe, Fabrikasi, dan 3D Printing.</h2>
+      <p>Dengan presisi tinggi untuk kebutuhan industri, otomotif, dan custom engineering.</p>
+      <a class="btn-primary" href="https://wa.me/628xxxxxxxxxx?text=Halo%20Hamura%20Tech%2C%20saya%20mau%20tanya%20pesanan%20CNC">Pesan via WhatsApp</a>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="services">
+      <div class="service">
+        <div class="icon">M</div>
+        <div>
+          <h3>CNC Milling</h3>
+          <p>Proses pemotongan material menggunakan mesin CNC modern dengan hasil presisi tinggi.</p>
+          <div class="service-details"><p>CNC Milling kami mampu menangani berbagai jenis material dengan kecepatan dan akurasi tinggi, cocok untuk komponen industri dan otomotif.</p><img src="milling.jpg" alt="CNC Milling"></div>
+        </div>
+      </div>
+
+      <div class="service">
+        <div class="icon">L</div>
+        <div>
+          <h3>CNC Lathe</h3>
+          <p>Solusi pembubutan logam dan komponen silinder dengan akurasi tinggi dan hasil rapi.</p>
+          <div class="service-details"><p>Dengan mesin lathe presisi, kami menghasilkan bagian silinder dan as komponen dengan toleransi minimal dan kualitas tinggi.</p><img src="lathe.jpg" alt="CNC Lathe"></div>
+        </div>
+      </div>
+
+      <div class="service">
+        <div class="icon">F</div>
+        <div>
+          <h3>Fabrikasi</h3>
+          <p>Pembuatan struktur logam, rangka mesin, dan berbagai kebutuhan manufaktur custom.</p>
+          <div class="service-details"><p>Kami menyediakan jasa fabrikasi untuk berbagai kebutuhan, mulai dari pembuatan rangka, dudukan mesin, hingga struktur industri berat.</p><img src="fabrikasi.jpg" alt="Fabrikasi"></div>
+        </div>
+      </div>
+
+      <div class="service">
+        <div class="icon">3D</div>
+        <div>
+          <h3>3D Printing</h3>
+          <p>Layanan cetak 3D cepat untuk prototipe, desain custom, dan komponen ringan.</p>
+          <div class="service-details"><p>Dengan teknologi FDM & resin, kami membantu pembuatan prototipe dan part presisi tinggi dari berbagai bahan seperti PLA, ABS, dan resin kuat.</p><img src="printing.jpg" alt="3D Printing"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h3>Kontak</h3>
+    <p>Hubungi kami untuk konsultasi atau permintaan penawaran.</p>
+    <a class="btn-primary" href="https://wa.me/628xxxxxxxxxx?text=Halo%20Hamura%20Tech%2C%20saya%20mau%20tanya%20pesanan%20CNC">Pesan via WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div>© Hamura Tech — CNC Milling, CNC Lathe, Fabrikasi & 3D Printing</div>
+  <div style="font-size:13px;color:#6b7280">Email: info@hamuratech.example</div>
+</footer>
+
+  </div>  <script>
+    const services = document.querySelectorAll('.service');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    services.forEach(service => observer.observe(service));
+
+    services.forEach(service => {
+      service.addEventListener('click', () => {
+        const details = service.querySelector('.service-details');
+        details.style.display = details.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script></body>
+  </html>
